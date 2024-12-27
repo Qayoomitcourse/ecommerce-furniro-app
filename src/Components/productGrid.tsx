@@ -71,6 +71,8 @@ const ProductGrid = () => {
               <Image
                 src={product.image}
                 alt={product.name}
+                width={500}
+                height={300}
                 className="w-full h-56 object-cover rounded-t-lg"
               />
               {product.discount && (
@@ -107,17 +109,17 @@ const ProductGrid = () => {
 
               <div className="flex gap-6 w-auto text-white mt-4">
                 <button onClick={() => handleCompare(product)} className="flex items-center gap-2">
-                  <Image src="/assets/Compare.png" alt="Compare" className="w-4 h-4" />
+                  <Image src="/assets/Compare.png" width={14} height={14} alt="Compare" className="w-4 h-4" />
                   <span className="text-[16px] font-semibold">Compare</span>
                 </button>
                 
                 <Link href="/share-link" className="flex items-center gap-2">
-                  <Image src="/assets/Share.png" alt="Share" className="w-4 h-4" />
+                  <Image src="/assets/Share.png"  width={14} height={14}  alt="Share" className="w-4 h-4" />
                   <span className="text-[16px] font-semibold">Share</span>
                 </Link>
 
                 <Link href="/like-link" className="flex items-center gap-2">
-                  <Image src="/assets/Heart.png" alt="Like" className="w-4 h-4" />
+                  <Image src="/assets/Heart.png"  width={14} height={14}  alt="Like" className="w-4 h-4" />
                   <span className="text-[16px] font-semibold">Like</span>
                 </Link>
               </div>

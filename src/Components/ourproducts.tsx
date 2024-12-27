@@ -3,6 +3,7 @@ import Image from "next/image";
 import { Poppins } from "next/font/google";
 import Link from "next/link";
 
+
 // Import the Poppins font
 const poppins = Poppins({
   subsets: ["latin"],
@@ -105,7 +106,8 @@ const OurProducts = () => {
               <Image
                 src={product.image}
                 alt={product.name}
-                layout="fill"
+                width={500}
+                height={300}
                 objectFit="cover"
               />
             </div>
@@ -158,9 +160,9 @@ const OurProducts = () => {
                 <Link href="/compare-link" target="_blank" rel="noopener noreferrer">
                   <div className="flex items-center gap-2">
                     <Image
-                      src="/assets/Compare.png" // Replace with your image path
+                      src={"/assets/Compare.png"} // Replace with your image path
                       alt="Compare"
-                      width={13.1}
+                      width={14}
                       height={14}
                     />
                     <span className="text-[16px] font-semibold">Compare</span>
@@ -171,7 +173,7 @@ const OurProducts = () => {
                 <Link href="/like-link" target="_blank" rel="noopener noreferrer">
                   <div className="flex items-center gap-2">
                     <Image
-                      src="/assets/Heart.png" // Replace with your image path
+                      src="/assets/Heart.png" 
                       alt="Like"
                       width={13.1}
                       height={14}
