@@ -4,6 +4,7 @@ import arrow from '../../../public/assets/arrow.png'
 import Image from 'next/image';
 import logo from '../../../public/assets/logo.png'
 import Pagebotumsection from '@/Components/pagebotumsection';
+import Link from 'next/link';
 
 
 interface CartItem {
@@ -276,7 +277,7 @@ const CheckoutForm = ({ cartItems = [] }: CheckoutFormProps) => {
 
           <p className="text-sm text-gray-600 mt-6">
             Your personal data will be used to support your experience throughout this website, to manage access to your account, and for other purposes described in our{' '}
-            <a href="/privacy-policy" className="underline">privacy policy</a>.
+            <Link href="/privacy-policy" className="underline">privacy policy</Link>.
           </p>
 
           <button
