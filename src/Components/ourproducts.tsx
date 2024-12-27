@@ -43,7 +43,7 @@ const products = [
     discount: "New",
   },
   {
-    image: "/assets/image 5.png",
+    image: "/assets/Image 5.png",
     name: "Grifo",
     description: "Night lamp",
     price: "Rp 1.500.000",

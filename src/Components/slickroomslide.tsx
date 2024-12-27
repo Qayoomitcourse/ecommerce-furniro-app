@@ -91,7 +91,7 @@ const Slickroomslide = () => {
           </div>
           <div
             className="w-[375px] h-[480px] shrink-0 bg-cover transition-all duration-500"
-            style={{ backgroundImage: 'url("/assets/bedroom.png")' }}
+            style={{ backgroundImage: 'url("/assets/Bedroom.png")' }}
           >
             <div className="h-full p-6 flex items-end opacity-0 transition-opacity duration-500">
               <div className="py-8 px-4 backdrop-blur-sm bg-white/70">
@@ -125,7 +125,7 @@ const Slickroomslide = () => {
           </div>
           <div
             className="w-[375px] h-[480px] shrink-0 bg-cover transition-all duration-500"
-            style={{ backgroundImage: 'url("/assets/dining-dlvOrSlg.png")' }}
+            style={{ backgroundImage: 'url("/assets/dining.png")' }}
           >
             <div className="h-full p-6 flex items-end opacity-0 transition-opacity duration-500">
               <div className="py-8 px-4 backdrop-blur-sm bg-white/70">
