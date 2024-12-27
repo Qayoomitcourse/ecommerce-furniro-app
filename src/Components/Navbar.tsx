@@ -1,13 +1,11 @@
 'use client'
 import Image from 'next/image';
 import Link from 'next/link';
-import React, { useState } from 'react';
 import NavIcons from './navicons';
 
 
 
 const Navbar = () => {
-  const [isCartOpen, setCartOpen] = useState(false)
 
   return (
    
