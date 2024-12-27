@@ -54,7 +54,7 @@ const NavIcons = () => {
         <Link href="/search">
           <Image src={search} alt="search" width={30} height={30} />
         </Link>
-        <Link href="/favorites">
+        <Link href="/wishlist">
           <Image src={hearticon} alt="wishlist" width={23.33} height={18.67} />
         </Link>
         <Link href="/cartpage" className="relative">

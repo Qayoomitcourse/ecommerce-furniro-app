@@ -3,7 +3,7 @@ import React from 'react'
 const SinglePage = () => {
   return (
     <div>
-      Single
+      SinglepAGE
     </div>
   )
 }

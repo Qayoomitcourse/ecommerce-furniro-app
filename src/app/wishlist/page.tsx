@@ -1,9 +1,9 @@
 import React from 'react'
 
-const ListPage = () => {
+const Wishlist = () => {
   return (
     <div>
-      <div>
+        <div>
       <br />
       <br />
       <br />
@@ -11,11 +11,12 @@ const ListPage = () => {
       <br />
 
   <div className='w-full h-[50] bg-blue-400'>
-    <h1> This is Shop Page </h1>
+    <h1> WishList </h1>
     </div>
     </div>
+      
     </div>
   )
 }
 
-export default ListPage
+export default Wishlist

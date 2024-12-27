@@ -1,6 +1,6 @@
 import React from 'react'
 
-const ListPage = () => {
+const Contact = () => {
   return (
     <div>
       <div>
@@ -11,11 +11,11 @@ const ListPage = () => {
       <br />
 
   <div className='w-full h-[50] bg-blue-400'>
-    <h1> This is Shop Page </h1>
+    <h1> This is Contact Page </h1>
     </div>
     </div>
     </div>
   )
 }
 
-export default ListPage
+export default Contact
