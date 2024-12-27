@@ -1,19 +1,18 @@
 import React from 'react';
 import Image from 'next/image';
 import { Poppins } from 'next/font/google';
-import dining from '../../public/assets/dining.png'
-import living from '../../public/assets/living.png'
-import bedroom from '../../public/assets/Bedroom.png'
 
+// Import Poppins font
 const poppins = Poppins({
-  subsets: ['latin'],
-  weight: ['400', '600', '700'],
+  subsets: ['latin'], // Specify the language subset
+  weight: ['400', '600', '700'], // Select font weights you need
 });
 
 const BrowseRange = () => {
   return (
     <section className="flex justify-center items-center py-16 bg-[#F9F9F9]">
-      <div className="container mx-auto px-4 max-w-[1183px]">
+      {/* Main container with fixed width and height */}
+      <div className="md:w-[1183px] h-auto">
         {/* Header */}
         <div className="text-center mb-12">
           <h2 className={`${poppins.className} text-[32px] font-bold mb-2 leading-[1.2]`}>
@@ -28,13 +27,15 @@ const BrowseRange = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Dining */}
           <div className="rounded-lg shadow-lg overflow-hidden transition-transform duration-300 hover:scale-105">
-            <div className="relative w-full aspect-[4/5]">
+            <div className="relative w-[381px] h-[480px] mx-auto">
               <Image
-                src={dining}
+                src="/assets/dining.png"
                 alt="Dining"
-                fill
-                className="object-cover"
-                priority
+                width={500}
+                height={700}
+                layout='responsive'
+                style={{ objectFit: "cover" }}
+
               />
             </div>
             <div className="text-center py-4">
@@ -46,13 +47,15 @@ const BrowseRange = () => {
 
           {/* Living */}
           <div className="rounded-lg shadow-lg overflow-hidden transition-transform duration-300 hover:scale-105">
-            <div className="relative w-full aspect-[4/5]">
+            <div className="relative w-[381px] h-[480px] mx-auto">
               <Image
-                src={living}
+                src="/assets/living.png"
                 alt="Living"
-                fill
-                className="object-cover"
-                priority
+                width={500}
+                height={700}
+                layout='responsive'
+                style={{ objectFit: "cover" }}
+
               />
             </div>
             <div className="text-center py-4">
@@ -64,13 +67,14 @@ const BrowseRange = () => {
 
           {/* Bedroom */}
           <div className="rounded-lg shadow-lg overflow-hidden transition-transform duration-300 hover:scale-105">
-            <div className="relative w-full aspect-[4/5]">
+            <div className="relative w-[381px] h-[480px] mx-auto">
               <Image
-                src={bedroom}
+                src="/assets/bedroom.png"
                 alt="Bedroom"
-                fill
-                className="object-cover"
-                priority
+                width={500}
+                height={700}
+                layout='responsive'
+                style={{ objectFit: "cover" }}
               />
             </div>
             <div className="text-center py-4">
