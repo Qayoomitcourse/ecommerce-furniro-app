@@ -69,7 +69,7 @@ const BrowseRange = () => {
           <div className="rounded-lg shadow-lg overflow-hidden transition-transform duration-300 hover:scale-105">
             <div className="relative w-[381px] h-[480px] mx-auto">
               <Image
-                src="/assets/bedroom.png"
+                src="/assets/Bedroom.png"
                 alt="Bedroom"
                 width={500}
                 height={700}
