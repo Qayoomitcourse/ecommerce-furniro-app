@@ -1,6 +1,9 @@
 import React from 'react';
 import Image from 'next/image';
 import { Poppins } from 'next/font/google';
+import dining from '../../public/assets/dining.png'
+import living from '../../public/assets/living.png'
+import bedroom from '../../public/assets/Bedroom.png'
 
 const poppins = Poppins({
   subsets: ['latin'],
@@ -27,7 +30,7 @@ const BrowseRange = () => {
           <div className="rounded-lg shadow-lg overflow-hidden transition-transform duration-300 hover:scale-105">
             <div className="relative w-full aspect-[4/5]">
               <Image
-                src="/assets/dining.png"
+                src={dining}
                 alt="Dining"
                 fill
                 className="object-cover"
@@ -45,7 +48,7 @@ const BrowseRange = () => {
           <div className="rounded-lg shadow-lg overflow-hidden transition-transform duration-300 hover:scale-105">
             <div className="relative w-full aspect-[4/5]">
               <Image
-                src="/assets/living.png"
+                src={living}
                 alt="Living"
                 fill
                 className="object-cover"
@@ -63,7 +66,7 @@ const BrowseRange = () => {
           <div className="rounded-lg shadow-lg overflow-hidden transition-transform duration-300 hover:scale-105">
             <div className="relative w-full aspect-[4/5]">
               <Image
-                src="/assets/bedroom.png"
+                src={bedroom}
                 alt="Bedroom"
                 fill
                 className="object-cover"
