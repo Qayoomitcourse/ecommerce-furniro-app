@@ -2,17 +2,15 @@ import React from 'react';
 import Image from 'next/image';
 import { Poppins } from 'next/font/google';
 
-// Import Poppins font
 const poppins = Poppins({
-  subsets: ['latin'], // Specify the language subset
-  weight: ['400', '600', '700'], // Select font weights you need
+  subsets: ['latin'],
+  weight: ['400', '600', '700'],
 });
 
 const BrowseRange = () => {
   return (
     <section className="flex justify-center items-center py-16 bg-[#F9F9F9]">
-      {/* Main container with fixed width and height */}
-      <div className="md:w-[1183px] h-auto">
+      <div className="container mx-auto px-4 max-w-[1183px]">
         {/* Header */}
         <div className="text-center mb-12">
           <h2 className={`${poppins.className} text-[32px] font-bold mb-2 leading-[1.2]`}>
@@ -27,13 +25,13 @@ const BrowseRange = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Dining */}
           <div className="rounded-lg shadow-lg overflow-hidden transition-transform duration-300 hover:scale-105">
-            <div className="relative w-[381px] h-[480px] mx-auto">
+            <div className="relative w-full aspect-[4/5]">
               <Image
                 src="/assets/dining.png"
                 alt="Dining"
-                width={500}
-                height={700}
-                objectFit="cover"
+                fill
+                className="object-cover"
+                priority
               />
             </div>
             <div className="text-center py-4">
@@ -45,13 +43,13 @@ const BrowseRange = () => {
 
           {/* Living */}
           <div className="rounded-lg shadow-lg overflow-hidden transition-transform duration-300 hover:scale-105">
-            <div className="relative w-[381px] h-[480px] mx-auto">
+            <div className="relative w-full aspect-[4/5]">
               <Image
                 src="/assets/living.png"
                 alt="Living"
-                width={500}
-                height={700}
-                objectFit="cover"
+                fill
+                className="object-cover"
+                priority
               />
             </div>
             <div className="text-center py-4">
@@ -63,13 +61,13 @@ const BrowseRange = () => {
 
           {/* Bedroom */}
           <div className="rounded-lg shadow-lg overflow-hidden transition-transform duration-300 hover:scale-105">
-            <div className="relative w-[381px] h-[480px] mx-auto">
+            <div className="relative w-full aspect-[4/5]">
               <Image
                 src="/assets/bedroom.png"
                 alt="Bedroom"
-                width={500}
-                height={700}
-                objectFit="cover"
+                fill
+                className="object-cover"
+                priority
               />
             </div>
             <div className="text-center py-4">
