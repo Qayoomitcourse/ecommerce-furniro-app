@@ -19,7 +19,7 @@ const Cart = () => {
 
       {/* Cart Sidebar */}
       <div
-        className={`fixed top-0 right-0 h-full w-[417px] bg-white shadow-lg z-50 flex flex-col transform transition-transform duration-300 ${
+        className={`fixed top-0 right-0 h-full w-[417px] bg-white shadow-lg z-50 flex flex-col transform transition-transform duration-500 ${
           isOpen ? 'translate-x-0' : 'translate-x-full'
         }`}
       >

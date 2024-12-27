@@ -3,7 +3,6 @@ import Image from "next/image";
 import { Poppins } from "next/font/google";
 import Link from "next/link";
 
-
 // Import the Poppins font
 const poppins = Poppins({
   subsets: ["latin"],
@@ -96,7 +95,7 @@ const OurProducts = () => {
           >
             {/* Discount/Badge */}
             {product.discount && (
-              <span className="absolute top-2 left-2 bg-[#F4F5F7] text-white text-xs font-bold px-2 py-1 rounded">
+              <span className="absolute top-2 left-2 bg-[#F4F5F7] text-black text-xs font-bold px-2 py-1 rounded">
                 {product.discount}
               </span>
             )}
@@ -113,10 +112,8 @@ const OurProducts = () => {
             </div>
 
             {/* Product Details */}
-            <div className=" bg-[#F4F5F7] p-4">
-              <h3
-                className={`${poppins.className} text-[24px] font-semibold mb-1`}
-              >
+            <div className="bg-[#F4F5F7] p-4">
+              <h3 className={`${poppins.className} text-[24px] font-semibold mb-1`}>
                 {product.name}
               </h3>
               <p className="text-[16px] text-[#898989]">{product.description}</p>
@@ -142,12 +139,12 @@ const OurProducts = () => {
               </button>
 
               {/* Action Links (Share, Compare, Like) */}
-              <div className="flex gap-6 w-auto text-white mt-4">
+              <div className="flex gap-6 text-white mt-4">
                 {/* Share */}
                 <Link href="/share-link" target="_blank" rel="noopener noreferrer">
                   <div className="flex items-center gap-2">
                     <Image
-                      src="/assets/Share.png" // Replace with your image path
+                      src="/assets/Share.png"
                       alt="Share"
                       width={13.1}
                       height={14}
@@ -160,7 +157,7 @@ const OurProducts = () => {
                 <Link href="/compare-link" target="_blank" rel="noopener noreferrer">
                   <div className="flex items-center gap-2">
                     <Image
-                      src={"/assets/Compare.png"} // Replace with your image path
+                      src={"/assets/Compare.png"}
                       alt="Compare"
                       width={14}
                       height={14}
@@ -173,7 +170,7 @@ const OurProducts = () => {
                 <Link href="/like-link" target="_blank" rel="noopener noreferrer">
                   <div className="flex items-center gap-2">
                     <Image
-                      src="/assets/Heart.png" 
+                      src="/assets/Heart.png"
                       alt="Like"
                       width={13.1}
                       height={14}
@@ -189,8 +186,11 @@ const OurProducts = () => {
 
       {/* Show More Button */}
       <div className="mt-8">
-        <Link href="/shop" className="px-6 py-2 w-[245px] h-[48px] border-[#B88E2F] text-[#B88E2F] text-[16px] font-bold rounded hover:bg-[#B88E2F] hover:text-white transition">
-            Show More
+        <Link
+          href="/shop"
+          className="px-6 py-2 w-[245px] h-[48px] border-[#B88E2F] text-[#B88E2F] text-[16px] font-bold rounded hover:bg-[#B88E2F] hover:text-white transition"
+        >
+          Show More
         </Link>
       </div>
     </section>
