@@ -31,7 +31,8 @@ const BrowseRange = () => {
               <Image
                 src="/assets/dining.png"
                 alt="Dining"
-                layout="fill"
+                width={500}
+                height={700}
                 objectFit="cover"
               />
             </div>
@@ -48,7 +49,8 @@ const BrowseRange = () => {
               <Image
                 src="/assets/living.png"
                 alt="Living"
-                layout="fill"
+                width={500}
+                height={700}
                 objectFit="cover"
               />
             </div>
@@ -65,7 +67,8 @@ const BrowseRange = () => {
               <Image
                 src="/assets/bedroom.png"
                 alt="Bedroom"
-                layout="fill"
+                width={500}
+                height={700}
                 objectFit="cover"
               />
             </div>
