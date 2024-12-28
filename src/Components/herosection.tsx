@@ -9,7 +9,7 @@ const poppins = Poppins({
 const Hero = () => {
   return (
     <section
-    className="relative bg-cover bg-center w-full h-[716px] sm:h-[600px] md:h-[716px] lg:h-[800px] flex flex-col items-center justify-center text-center"
+    className="relative bg-cover bg-center w-[1440] h-[716px] sm:h-[600px] md:h-[716px] lg:h-[800px] flex flex-col items-center justify-center text-center"
     style={{
       backgroundImage: `url('/assets/benner.png')`,
     }}    >
