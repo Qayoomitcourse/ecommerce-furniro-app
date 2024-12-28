@@ -57,19 +57,25 @@ const NavIcons = () => {
         <Link href="/wishlist">
           <Image src={hearticon} alt="wishlist" width={23.33} height={18.67} />
         </Link>
-        <Link href="/cartpage" className="relative">
-          <Image src={cart} alt="cart" width={30} height={30} onClick={() => setCartOpen((prev) => !prev)} />
-          <span className="absolute top-0 right-0 bg-[#D4AF37] text-white text-xs font-bold w-4 h-4 rounded-full flex items-center justify-center ">
-            2
-          </span>
-        </Link>
-        {isCartOpen && (
-          <div >
+        <div className="relative">
+  <Image
+    src={cart}
+    alt="cart"
+    width={30}
+    height={30}
+    className="cursor-pointer"
+    onClick={() => setCartOpen((prev) => !prev)} // Toggle the cart modal
+  />
+  <span className="absolute top-0 right-0 bg-[#D4AF37] text-white text-xs font-bold w-4 h-4 rounded-full flex items-center justify-center">
+    2
+  </span>
+  {isCartOpen && (
+    <div>
+      <Cart />
+    </div>
+  )}
+</div>
 
-            <Cart />
-
-          </div>
-        )}
       </div>
 
 

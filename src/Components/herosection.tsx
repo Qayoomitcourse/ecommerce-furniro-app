@@ -9,12 +9,11 @@ const poppins = Poppins({
 const Hero = () => {
   return (
     <section
-      className="relative bg-cover bg-center w-full h-[716px] flex flex-col items-center justify-center text-center"
-      style={{
-        backgroundImage: `url('/assets/benner.png')`,
-      }}
-    >
-      <div className="relative bg-[#fff3e3] sm:mt-10 md:mt-[150px] sm:w-[90%] md:w-[643px] px-6 py-8 sm:rounded-xl md:ml-[850px]">
+    className="relative bg-cover bg-center w-full h-[716px] sm:h-[600px] md:h-[716px] lg:h-[800px] flex flex-col items-center justify-center text-center"
+    style={{
+      backgroundImage: `url('/assets/benner.png')`,
+    }}    >
+      <div className="relative bg-[#fff3e3] sm:mt-10 md:mt-[150px] sm:w-[90%] md:w-[643px] h-[443] px-6 py-8 sm:rounded-xl md:ml-[850px]">
         <div className="w-full sm:px-6 sm:py-8 md:w-[561px] sm:text-center md:text-start">
           <p className={`font-bold ${poppins.className} text-[#B88E2F] sm:text-[12px] md:text-[16px]`}>
             New Arrival
