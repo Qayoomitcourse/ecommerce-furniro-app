@@ -1,59 +1,52 @@
-import React, { useState } from 'react';
+import React from "react";
+import Image from "next/image";
 
-interface Slide {
-  name: string;
-  image: string;
-}
 
-const data2: Slide[] = [
-  { name: 'Syltherine', image: '/assets/slide1.png' },
-  { name: 'Leviosa', image: '//assets/slide1.png' },
-  { name: 'Lolito', image: '//assets/slide1.png' },
-  { name: 'Respira', image: '/assets/slide1.png' },
-  { name: 'Grifo', image: '//assets/slide1.png' },
-  { name: 'Muggo', image: '//assets/slide1.png' },
-  { name: 'Pingky', image: '/assets/slide1.png' },
-  { name: 'Potty', image: '/assets/slide1.png' },
-];
-
-const Slider: React.FC = () => {
-  const [currentIndex, setCurrentIndex] = useState(0);
-
+const Inspiration = () => {
   return (
-    <div className="w-full h-[670px] py-16 bg-[#fcf8fc] flex items-center justify-center gap-8">
-      <div>
-        <h1 className="text-5xl font-bold mb-6 leading-tight">
-          50+ Beautiful rooms <br /> inspiration
-        </h1>
-        <p className="text-gray-600 mb-8 text-lg">
-          Our designer already made a lot of beautiful <br /> prototype of rooms that inspire you
-        </p>
-        <button className="px-8 py-4 bg-[#faf1dd] text-white font-medium rounded-md">
-          Explore More
-        </button>
-      </div>
-      <div className="w-[404px] h-[582px] relative">
-        {data2.map((slide, index) => (
-          <div
-            key={index}
-            className={`absolute inset-0 transition-opacity duration-1000 ease-in-out flex items-center justify-center ${
-              index === currentIndex ? 'opacity-100' : 'opacity-0'
-            }`}
-          >
-            <img
-              src={slide.image}
-              alt={slide.name}
-              className="h-full object-cover rounded-lg"
+    <section className="bg-mylightpink w-full py-12">
+      <div className="container mx-auto px-6 lg:px-24">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
+          <div className="text-center lg:text-left lg:col-span-1 space-y-6">
+            <div className="flex flex-col justify-center items-center lg:items-start">
+              <h1 className="font-bold text-3xl sm:text-4xl lg:text-4xl text-mylightblack text-center lg:text-left mt-8 lg:mt-20">
+                50+ Beautiful rooms inspiration
+              </h1>
+              <p className="mt-4 text-base sm:text-lg lg:text-xl text-center lg:text-left">
+                Our designer already made a lot of beautiful prototipe of rooms
+                that inspire you
+              </p>
+            </div>
+            <button className="bg-mymusturd mt-6">Explore More</button>
+            
+          </div>
+
+          <div className="flex justify-center">
+            <Image
+              src="/assets/slide1.png"
+              alt="Wall Image"
+              height={450}
+              width={350}
+              className="h-auto object-cover"
             />
-            <div className="absolute bottom-12 left-12 bg-white p-6 rounded-lg shadow-md">
-              <p className="text-sm text-gray-500">0{index + 1}</p>
-              <h2 className="text-2xl font-bold mt-2">{slide.name}</h2>
+          </div>
+          <div className="flex flex-col items-center">
+            <div className="mt-8">
+              <Image src="/assets/Rectangle 25.png" alt="Chair" height={380} width={320} />
+            </div>
+            <div className="mt-6">
+              <Image src="/assets/slide2.png"
+              alt="Move"
+              height={50}
+              width={100}
+              className="w-auto h-auto"
+              />
             </div>
           </div>
-        ))}
+        </div>
       </div>
-    </div>
+    </section>
   );
 };
 
-export default Slider;
+export default Inspiration;

@@ -1,12 +1,5 @@
+import Link from "next/link";
 import React from "react";
-import { Montserrat, Poppins } from 'next/font/google';
-
-
-const poppins = Poppins({
-    subsets: ['latin'], 
-    weight: ['400', '600', '700'], 
-    style: ['normal', 'italic'], 
-});
 
 
 const HomeHeroSection: React.FC = () => {
@@ -27,12 +20,12 @@ const HomeHeroSection: React.FC = () => {
           <p className="text-gray-600 mt-4">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis.
           </p>
-          <a
+          <Link
             href="/shop"
             className="inline-block mt-6 px-6 py-3 text-white bg-yellow-600 hover:bg-yellow-700 rounded-lg shadow-md transition duration-200"
           >
             BUY NOW
-          </a>
+          </Link>
         </div>
       </div>
     </div>

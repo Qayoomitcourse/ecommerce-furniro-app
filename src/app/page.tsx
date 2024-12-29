@@ -2,9 +2,8 @@
 import BrowseRange from "@/Components/banner2";
 import OurProducts from "@/Components/ourproducts";
 import Shareyoursetup from "@/Components/shareyoursetup";
-import Slider from "@/Components/slider";
-import Slickroomslide from "@/Components/slickroomslide";
 import HomeHeroSection from "@/Components/hero";
+import Inspiration from "@/Components/slider";
 
 
 export default function Home() {
@@ -28,13 +27,14 @@ export default function Home() {
 
       {/* Slick Room Slide Section */}
       <div className="w-full px-4 sm:px-6 md:px-8 lg:px-10">
-        <Slider />
+        <Inspiration/>
+        {/* <Slider /> */}
       </div>
 
       {/* Share Your Setup Section */}
-      {/* <div className="w-full px-4 sm:px-6 md:px-8 lg:px-10">
+      <div className="w-full px-4 sm:px-6 md:px-8 lg:px-10">
         <Shareyoursetup />
-      </div> */}
+      </div>
     </div>
   );
 }

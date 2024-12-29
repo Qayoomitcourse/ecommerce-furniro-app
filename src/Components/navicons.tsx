@@ -23,10 +23,6 @@ const NavIcons = () => {
     }
   };
 
-  const handleCartClick = () => {
-    setCartOpen((prev) => !prev); // Toggle the cart open/close state
-  };
-
   return (
     <div className="flex space-x-6 text-lg text-black">
       <div className="flex items-center relative space-x-4 justify-between w-full sm:w-auto sm:justify-end">
