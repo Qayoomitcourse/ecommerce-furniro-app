@@ -22,7 +22,7 @@ const CartModel = () => {
       };
     
       const openCartPage = () => {
-        router.push('/cart');
+        router.push('/cartpage');
       };
     
 
