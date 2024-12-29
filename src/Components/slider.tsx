@@ -1,4 +1,3 @@
-'use client'
 import React, { useState } from 'react';
 
 interface Slide {
@@ -8,8 +7,13 @@ interface Slide {
 
 const data2: Slide[] = [
   { name: 'Syltherine', image: '/assets/slide1.png' },
-  { name: 'Leviosa', image: '/assets/slide2.png' },
-  { name: 'Lolito', image: '//assets/Bedroom.png' },
+  { name: 'Leviosa', image: '//assets/slide1.png' },
+  { name: 'Lolito', image: '//assets/slide1.png' },
+  { name: 'Respira', image: '/assets/slide1.png' },
+  { name: 'Grifo', image: '//assets/slide1.png' },
+  { name: 'Muggo', image: '//assets/slide1.png' },
+  { name: 'Pingky', image: '/assets/slide1.png' },
+  { name: 'Potty', image: '/assets/slide1.png' },
 ];
 
 const Slider: React.FC = () => {

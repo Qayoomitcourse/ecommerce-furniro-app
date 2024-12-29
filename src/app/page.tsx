@@ -1,31 +1,35 @@
+'use client'
 import BrowseRange from "@/Components/banner2";
-import Hero from "@/Components/herosection";
 import OurProducts from "@/Components/ourproducts";
 import Shareyoursetup from "@/Components/shareyoursetup";
+import Slider from "@/Components/slider";
 import Slickroomslide from "@/Components/slickroomslide";
+import HomeHeroSection from "@/Components/hero";
+
 
 export default function Home() {
   return (
-    <div className=" w-[1440]">
+    <div className=" w-screen">
       {/* Hero Section */}
       <div className="w-full">
-        <Hero />
+        
+        <HomeHeroSection/>
       </div>
 
       {/* Browse Range Section */}
-      {/* <div className="w-full px-4 sm:px-6 md:px-8 lg:px-10">
+      <div className="w-full px-4 sm:px-6 md:px-8 lg:px-10">
         <BrowseRange />
-      </div> */}
+      </div>
 
       {/* Our Products Section */}
-      {/* <div className="w-full px-4 sm:px-6 md:px-8 lg:px-10">
+      <div className="w-full px-4 sm:px-6 md:px-8 lg:px-10">
         <OurProducts />
-      </div> */}
+      </div>
 
       {/* Slick Room Slide Section */}
-      {/* <div className="w-full px-4 sm:px-6 md:px-8 lg:px-10">
-        <Slickroomslide />
-      </div> */}
+      <div className="w-full px-4 sm:px-6 md:px-8 lg:px-10">
+        <Slider />
+      </div>
 
       {/* Share Your Setup Section */}
       {/* <div className="w-full px-4 sm:px-6 md:px-8 lg:px-10">
